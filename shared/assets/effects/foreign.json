@@ -967,6 +967,9 @@
    },
    "inset": {
     "to": "inset"
+   },
+   "offset": {
+    "to": "offset"
    }
   }
  },
@@ -10055,6 +10058,1033 @@
     "to": "opacity",
     "min": 0,
     "max": 1
+   }
+  }
+ },
+ "com.alightcreative.effect.glass": {
+  "params": {
+   "angle_d": {
+    "to": "angle"
+   },
+   "color_d": {
+    "to": "color"
+   },
+   "radius": {
+    "to": "blur"
+   },
+   "refract": {
+    "max": 300,
+    "min": -300,
+    "scale": 150,
+    "to": "refraction"
+   }
+  },
+  "to": "glass"
+ },
+ "com.alightcreative.effect.glass2": {
+  "params": {
+   "angle": {
+    "to": "angle"
+   },
+   "color_d": {
+    "to": "color"
+   },
+   "radius": {
+    "to": "blur"
+   },
+   "refract": {
+    "max": 300,
+    "min": -300,
+    "scale": 150,
+    "to": "refraction"
+   },
+   "shine": {
+    "max": 1,
+    "min": 0,
+    "to": "highlight"
+   }
+  },
+  "to": "glass"
+ },
+ "com.alightcreative.effects.boxblur": {
+  "params": {
+   "strength": {
+    "min": 0,
+    "scale": 210,
+    "to": "strength"
+   }
+  },
+  "to": "blur"
+ },
+ "com.alightcreative.effects.boxblur2": {
+  "params": {
+   "strength": {
+    "min": 0,
+    "scale": 210,
+    "to": "strength"
+   }
+  },
+  "to": "blur"
+ },
+ "com.alightcreative.effects.brightcont": {
+  "params": {
+   "brightness": {
+    "max": 1,
+    "min": -1,
+    "to": "brightness"
+   },
+   "contrast": {
+    "max": 5,
+    "min": -1,
+    "to": "contrast"
+   }
+  },
+  "set": {
+   "style": 1
+  },
+  "to": "brightnesscontrast"
+ },
+ "com.alightcreative.effects.checkerdissolve": {
+  "params": {
+   "amount": {
+    "max": 1,
+    "min": 0,
+    "to": "strength"
+   },
+   "fade": {
+    "max": 0.5,
+    "min": 0,
+    "to": "fade"
+   },
+   "offset": {
+    "to": "offset"
+   },
+   "seed": {
+    "max": 5,
+    "min": 0,
+    "to": "seed"
+   },
+   "size": {
+    "max": 500,
+    "min": 1,
+    "to": "blockSize"
+   }
+  },
+  "to": "blockdissolve"
+ },
+ "com.alightcreative.effects.chromakey-adv": {
+  "params": {
+   "c1color": {
+    "to": "key"
+   },
+   "c1feather": {
+    "max": 1,
+    "min": 0,
+    "scale": 0.5,
+    "to": "softness"
+   },
+   "c1threshold": {
+    "max": 1,
+    "min": 0,
+    "power": 1.34,
+    "scale": 0.76,
+    "to": "tolerance"
+   }
+  },
+  "to": "chromakey"
+ },
+ "com.alightcreative.effects.chromaticvortexblur": {
+  "params": {
+   "centerPoint": {
+    "offset": 0.275,
+    "relative": true,
+    "scale": 0.45,
+    "to": "center"
+   },
+   "strength": {
+    "max": 1.9,
+    "min": 0,
+    "scale": 1,
+    "to": "amount"
+   }
+  },
+  "set": {
+   "amount": 0.0525,
+   "center": "0.500000,0.500000",
+   "sampling": 1
+  },
+  "to": "chromaticzoomblur"
+ },
+ "com.alightcreative.effects.clouds": {
+  "params": {
+   "color1": {
+    "to": "color1"
+   },
+   "color2": {
+    "to": "color2"
+   },
+   "intensity": {
+    "to": "intensity"
+   },
+   "octaves": {
+    "to": "octaves"
+   },
+   "scale": {
+    "to": "scale"
+   }
+  },
+  "to": "clouds"
+ },
+ "com.alightcreative.effects.coloradj": {
+  "params": {
+   "brightness": {
+    "max": 1,
+    "min": -1,
+    "to": "brightness"
+   },
+   "contrast": {
+    "max": 5,
+    "min": -1,
+    "to": "contrast"
+   }
+  },
+  "set": {
+   "style": 1
+  },
+  "to": "brightnesscontrast"
+ },
+ "com.alightcreative.effects.colorbalance": {
+  "params": {},
+  "to": "colorbalance"
+ },
+ "com.alightcreative.effects.colorhot2": {
+  "params": {
+   "tint": [
+    {
+     "blank": "60,1,0",
+     "to": "highlightHue",
+     "wrap": 360
+    },
+    {
+     "blank": "60,1,0",
+     "min": 0,
+     "to": "highlightAmount"
+    },
+    {
+     "blank": "60,1,0",
+     "to": "highlightLevel"
+    }
+   ]
+  },
+  "set": {
+   "highlightAmount": 1,
+   "highlightHue": 60,
+   "shadowAmount": 1,
+   "style": 1
+  },
+  "to": "splittone"
+ },
+ "com.alightcreative.effects.colortint": {
+  "params": {},
+  "to": "tint"
+ },
+ "com.alightcreative.effects.colortune": {
+  "params": {
+   "gain": [
+    {
+     "to": "gainHue",
+     "wrap": 360
+    },
+    {
+     "min": 0,
+     "to": "gainAmount"
+    },
+    {
+     "to": "gainLevel"
+    }
+   ],
+   "gamma": [
+    {
+     "to": "gammaHue",
+     "wrap": 360
+    },
+    {
+     "min": 0,
+     "to": "gammaAmount"
+    },
+    {
+     "to": "gammaLevel"
+    }
+   ],
+   "lift": [
+    {
+     "to": "liftHue",
+     "wrap": 360
+    },
+    {
+     "min": 0,
+     "to": "liftAmount"
+    },
+    {
+     "to": "liftLevel"
+    }
+   ],
+   "offset": [
+    {
+     "to": "offsetHue",
+     "wrap": 360
+    },
+    {
+     "min": 0,
+     "to": "offsetAmount"
+    },
+    {
+     "to": "offsetLevel"
+    }
+   ]
+  },
+  "set": {
+   "gainAmount": 0,
+   "gammaAmount": 0,
+   "liftAmount": 0,
+   "style": 1
+  },
+  "to": "colorwheels"
+ },
+ "com.alightcreative.effects.displacemap": {
+  "params": {
+   "edges": {
+    "to": "edges",
+    "values": {
+     "0": 0,
+     "1": 1,
+     "2": 2,
+     "3": 3
+    }
+   },
+   "fromctr": {
+    "to": "fromCenter"
+   },
+   "invert": {
+    "to": "invert"
+   },
+   "offs": {
+    "to": "offset"
+   },
+   "type": [
+    {
+     "to": "xchannel",
+     "values": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+     }
+    },
+    {
+     "to": "ychannel",
+     "values": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+     }
+    }
+   ]
+  },
+  "to": "displacementmap"
+ },
+ "com.alightcreative.effects.findedges-edgeglow": {
+  "params": {
+   "invert": {
+    "to": "invert"
+   },
+   "threshold": {
+    "to": "threshold"
+   }
+  },
+  "to": "edgeglow"
+ },
+ "com.alightcreative.effects.fractalwarp": {
+  "params": {},
+  "to": "fractalwarp"
+ },
+ "com.alightcreative.effects.fractalwarp2": {
+  "params": {
+   "intensity": {
+    "min": 0,
+    "to": "intensity"
+   },
+   "mag": {
+    "max": 2,
+    "min": 0,
+    "scale": 1.0,
+    "to": "strength"
+   },
+   "octaves": {
+    "max": 9,
+    "min": 1,
+    "to": "complexity"
+   },
+   "scale": {
+    "max": 50,
+    "min": 0.01,
+    "to": "scale"
+   },
+   "screenSpace": {
+    "to": "screenSpace"
+   }
+  },
+  "to": "fractalwarp"
+ },
+ "com.alightcreative.effects.glass": {
+  "params": {
+   "angle_d": {
+    "to": "angle"
+   },
+   "color_d": {
+    "to": "color"
+   },
+   "radius": {
+    "to": "blur"
+   },
+   "refract": {
+    "max": 300,
+    "min": -300,
+    "scale": 150,
+    "to": "refraction"
+   }
+  },
+  "to": "glass"
+ },
+ "com.alightcreative.effects.glass2": {
+  "params": {
+   "angle": {
+    "to": "angle"
+   },
+   "color_d": {
+    "to": "color"
+   },
+   "radius": {
+    "to": "blur"
+   },
+   "refract": {
+    "max": 300,
+    "min": -300,
+    "scale": 150,
+    "to": "refraction"
+   },
+   "shine": {
+    "max": 1,
+    "min": 0,
+    "to": "highlight"
+   }
+  },
+  "to": "glass"
+ },
+ "com.alightcreative.effects.glowscan": {
+  "params": {
+   "fillColor": {
+    "to": "color"
+   },
+   "strength": {
+    "min": 0,
+    "scale": 20,
+    "to": "intensity"
+   }
+  },
+  "to": "glowscan"
+ },
+ "com.alightcreative.effects.gradientdisplace": {
+  "params": {},
+  "to": "displacementmap"
+ },
+ "com.alightcreative.effects.lensblur": {
+  "params": {
+   "radius": {
+    "to": "radius"
+   }
+  },
+  "to": "lensblur"
+ },
+ "com.alightcreative.effects.lensblur2": {
+  "params": {
+   "centerPoint": {
+    "to": "center"
+   },
+   "radius": {
+    "to": "radius"
+   }
+  },
+  "to": "lensblur"
+ },
+ "com.alightcreative.effects.movealongpath3": {
+  "params": {
+   "angle": {
+    "to": "orientation"
+   },
+   "inset": {
+    "to": "inset"
+   },
+   "offset": {
+    "to": "offset"
+   },
+   "progress": {
+    "to": "progress"
+   },
+   "tangent": {
+    "to": "rotate"
+   }
+  },
+  "to": "movealongpath"
+ },
+ "com.alightcreative.effects.oscillate": {
+  "params": {
+   "angle": {
+    "to": "angle"
+   },
+   "freq": {
+    "to": "frequency"
+   },
+   "mag": {
+    "to": "magnitude"
+   },
+   "type": {
+    "max": 1,
+    "min": 0,
+    "to": "wave"
+   }
+  },
+  "to": "oscillate"
+ },
+ "com.alightcreative.effects.perlindisplace": {
+  "params": {
+   "freq": {
+    "max": 50,
+    "min": 0.01,
+    "scale": 0.5,
+    "to": "scale"
+   },
+   "mag": {
+    "max": 2.5,
+    "min": 0,
+    "scale": 0.01,
+    "to": "strength"
+   },
+   "seed": {
+    "max": 5,
+    "min": 0,
+    "to": "seed"
+   }
+  },
+  "to": "turbulentdisplace"
+ },
+ "com.alightcreative.effects.shadow": {
+  "params": {
+   "alpha": {
+    "max": 1,
+    "min": 0,
+    "to": "opacity"
+   },
+   "color": {
+    "to": "color"
+   },
+   "sdx": {
+    "to": "x"
+   },
+   "sdy": {
+    "to": "y"
+   },
+   "sigma": {
+    "min": 0,
+    "scale": 12,
+    "to": "blur"
+   }
+  },
+  "to": "dropshadow"
+ },
+ "com.alightcreative.effects.starfield": {
+  "params": {
+   "brightness": {
+    "max": 3,
+    "min": 0.001,
+    "to": "brightness"
+   },
+   "darkmatter": {
+    "max": 2,
+    "min": 0.001,
+    "to": "darkMatter"
+   },
+   "zoom": {
+    "max": 9,
+    "min": 0.01,
+    "to": "scale"
+   }
+  },
+  "to": "starfield"
+ },
+ "com.alightcreative.effects.streakstrips": {
+  "params": {
+   "alpha": {
+    "max": 1,
+    "min": 0,
+    "to": "alpha"
+   },
+   "amount": {
+    "max": 4000,
+    "min": 0,
+    "scale": 100,
+    "to": "reach"
+   },
+   "angle": {
+    "to": "angle"
+   }
+  },
+  "to": "linearstreaks"
+ },
+ "com.alightcreative.effects.volumetricclouds": {
+  "params": {
+   "densityParam": {
+    "min": 0,
+    "to": "intensity"
+   },
+   "lightColor": {
+    "to": "color2"
+   },
+   "seed": {
+    "to": "seed"
+   },
+   "shadowColor": {
+    "to": "color1"
+   }
+  },
+  "to": "clouds"
+ },
+ "com.alightcreative.effects.vortexblur": {
+  "params": {
+   "centerPoint": {
+    "to": "center"
+   },
+   "strength": {
+    "max": 360,
+    "min": 0,
+    "scale": 50,
+    "to": "sweep"
+   }
+  },
+  "to": "spinblur"
+ },
+ "com.alightcreative.effects.warpblur": {
+  "params": {
+   "FIXTURB": {
+    "ignore": true
+   },
+   "direction": {
+    "to": "direction",
+    "values": {
+     "0": 0,
+     "1": 1,
+     "2": 2,
+     "3": 3,
+     "4": 4
+    }
+   },
+   "evolution": {
+    "to": "evolution"
+   },
+   "intensity": {
+    "max": 2.5,
+    "min": 0,
+    "to": "strength"
+   },
+   "octaves": {
+    "max": 9,
+    "min": 1,
+    "to": "octaves"
+   },
+   "offs": {
+    "max": 1,
+    "min": -1,
+    "to": "bias"
+   },
+   "parr": {
+    "to": "parallax"
+   },
+   "position": {
+    "to": "offset"
+   },
+   "scale": {
+    "max": 50,
+    "min": 0.01,
+    "to": "scale"
+   },
+   "screenSpace": {
+    "neutral": false
+   },
+   "seed": {
+    "max": 5,
+    "min": 0,
+    "to": "seed"
+   },
+   "singleAxis": {
+    "neutral": true
+   },
+   "stretch": {
+    "max": 10,
+    "min": 0.01,
+    "to": "stretch"
+   }
+  },
+  "to": "turbulentdisplace"
+ },
+ "com.alightcreative.effects.wavewarp": {
+  "params": {
+   "phase": {
+    "to": "phase"
+   },
+   "xamp": {
+    "max": 30,
+    "min": 0,
+    "scale": 0.4,
+    "to": "magnitude"
+   },
+   "xspace": {
+    "max": 500,
+    "min": 0,
+    "to": "spacing"
+   }
+  },
+  "set": {
+   "speed": 0
+  },
+  "to": "wavewarp"
+ },
+ "com.alightcreative.gradientmap": {
+  "params": {
+   "color1": {
+    "to": "color1"
+   },
+   "color2": {
+    "to": "color2"
+   }
+  },
+  "to": "gradientmap"
+ },
+ "com.alightcreative.internal.shadow": {
+  "params": {
+   "alpha": {
+    "max": 1,
+    "min": 0,
+    "to": "opacity"
+   },
+   "color": {
+    "to": "color"
+   },
+   "sdx": {
+    "to": "x"
+   },
+   "sdy": {
+    "to": "y"
+   },
+   "sigma": {
+    "min": 0,
+    "scale": 12,
+    "to": "blur"
+   }
+  },
+  "to": "dropshadow"
+ },
+ "com.alightcreative.effects.cartoon": {
+  "to": "cartoon",
+  "params": {
+   "strength": {
+    "to": "strength"
+   },
+   "outline_color": {
+    "to": "outlineColor"
+   }
+  }
+ },
+ "com.alightcreative.effects.outline": {
+  "to": "outline",
+  "params": {
+   "radius": {
+    "to": "radius"
+   }
+  }
+ },
+ "com.alightcreative.effects.outlinebad": {
+  "to": "outline",
+  "params": {
+   "radius": {
+    "to": "radius"
+   }
+  }
+ },
+ "com.alightcreative.effects.outlinebasic": {
+  "to": "outline",
+  "params": {
+   "radius": {
+    "to": "radius"
+   }
+  }
+ },
+ "com.alightcreative.effects.differencematte": {
+  "to": "differencematte",
+  "params": {
+   "threshold": {
+    "to": "threshold"
+   },
+   "feather": {
+    "to": "feather"
+   },
+   "density": {
+    "to": "density"
+   },
+   "offset": {
+    "to": "offset"
+   },
+   "mode": {
+    "to": "mode"
+   },
+   "sampling": {
+    "to": "sampling"
+   }
+  }
+ },
+ "com.alightcreative.blend.diff": {
+  "to": "differencematte",
+  "params": {}
+ },
+ "com.alightcreative.effects.diff": {
+  "to": "differencematte",
+  "params": {}
+ },
+ "com.alightcreative.effects.triprism": {
+  "to": "triprism",
+  "params": {
+   "scale": {
+    "to": "scale",
+    "min": 0.05,
+    "max": 10
+   },
+   "shadingType": {
+    "neutral": 1
+   },
+   "lightIntensity": {
+    "to": "shading",
+    "scale": 1,
+    "min": 0,
+    "max": 1
+   },
+   "shine": {
+    "to": "shine",
+    "min": 0,
+    "max": 1
+   },
+   "spec": {
+    "neutral": 30
+   },
+   "ambient": {
+    "neutral": 0.1
+   },
+   "lightColor": {
+    "neutral": "#ffffffff"
+   },
+   "lightDir": {
+    "neutral": "75,-75"
+   },
+   "lightDepth": {
+    "neutral": 100
+   },
+   "radius": {
+    "to": "radius",
+    "scale": 0.58,
+    "min": 0.02,
+    "max": 5
+   },
+   "height": {
+    "to": "depth",
+    "scale": 0.3,
+    "min": 0.01,
+    "max": 5
+   },
+   "mirror": {
+    "neutral": "false"
+   },
+   "texCrop": {
+    "neutral": 1
+   },
+   "texScale": {
+    "neutral": 1
+   },
+   "texAngle": {
+    "neutral": 0
+   },
+   "texTwirl": {
+    "neutral": 0
+   },
+   "texOffset": {
+    "neutral": "0,0"
+   },
+   "texStretch": {
+    "neutral": "false"
+   },
+   "zdist": {
+    "neutral": 6
+   }
+  },
+  "set": {
+   "rotX": 0,
+   "rotY": 0,
+   "rotZ": 0,
+   "position": "0,0",
+   "scale": 1,
+   "perspective": 1,
+   "shading": 1,
+   "shine": 0.8,
+   "light": 45,
+   "radius": 0.58,
+   "depth": 0.9,
+   "smoothing": 0
+  },
+  "orientation": {
+   "quat": "orient",
+   "euler": "rotate",
+   "to": [
+    "rotX",
+    "rotY",
+    "rotZ"
+   ]
+  }
+ },
+ "com.alightcreative.effects.triprism2": {
+  "to": "triprism",
+  "params": {
+   "scale": {
+    "to": "scale",
+    "min": 0.05,
+    "max": 10
+   },
+   "shadingType": {
+    "neutral": 1
+   },
+   "lightIntensity": {
+    "to": "shading",
+    "scale": 1,
+    "min": 0,
+    "max": 1
+   },
+   "shine": {
+    "to": "shine",
+    "min": 0,
+    "max": 1
+   },
+   "spec": {
+    "neutral": 30
+   },
+   "ambient": {
+    "neutral": 0.1
+   },
+   "lightColor": {
+    "neutral": "#ffffffff"
+   },
+   "lightDir": {
+    "neutral": "75,-75"
+   },
+   "lightDepth": {
+    "neutral": 100
+   },
+   "radius": {
+    "to": "radius",
+    "scale": 0.58,
+    "min": 0.02,
+    "max": 5
+   },
+   "height": {
+    "to": "depth",
+    "scale": 0.3,
+    "min": 0.01,
+    "max": 5
+   },
+   "mirror": {
+    "neutral": "false"
+   },
+   "texCrop": {
+    "neutral": 1
+   },
+   "texScale": {
+    "neutral": 1
+   },
+   "texAngle": {
+    "neutral": 0
+   },
+   "texTwirl": {
+    "neutral": 0
+   },
+   "texOffset": {
+    "neutral": "0,0"
+   },
+   "texStretch": {
+    "neutral": "false"
+   },
+   "zdist": {
+    "neutral": 6
+   }
+  },
+  "set": {
+   "rotX": 0,
+   "rotY": 0,
+   "rotZ": 0,
+   "position": "0,0",
+   "scale": 1,
+   "perspective": 1,
+   "shading": 1,
+   "shine": 0.8,
+   "light": 45,
+   "radius": 0.58,
+   "depth": 0.9,
+   "smoothing": 0
+  },
+  "orientation": {
+   "quat": "orient",
+   "euler": "rotate",
+   "to": [
+    "rotX",
+    "rotY",
+    "rotZ"
+   ]
+  }
+ },
+ "com.alightcreative.effects.rgb-gamma": {
+  "to": "rgbgamma",
+  "params": {
+   "redGamma": {
+    "to": "redGamma"
+   },
+   "greenGamma": {
+    "to": "greenGamma"
+   },
+   "blueGamma": {
+    "to": "blueGamma"
+   }
+  }
+ },
+ "com.alightcreative.effects.rgb-mixer": {
+  "to": "channelmixer",
+  "params": {
+   "rmix": {
+    "to": "rmix"
+   },
+   "gmix": {
+    "to": "gmix"
+   },
+   "bmix": {
+    "to": "bmix"
+   },
+   "gamma": {
+    "to": "gamma"
+   },
+   "offset": {
+    "to": "offset"
    }
   }
  }

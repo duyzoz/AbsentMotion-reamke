@@ -1,0 +1,33 @@
+{
+ "id": "outline",
+ "name": "Outline",
+ "category": "stylize",
+ "description": "Draws a solid outline hugging the outside edge of the layer's opaque shape, in any color and thickness.",
+ "params": [
+  {
+   "id": "radius",
+   "label": "Radius",
+   "type": "float",
+   "default": 5,
+   "min": 0,
+   "max": 50,
+   "step": 0.1
+  },
+  {
+   "id": "color",
+   "label": "Color",
+   "type": "color",
+   "default": "#ff000000"
+  },
+  {
+   "id": "opacity",
+   "label": "Opacity",
+   "type": "float",
+   "default": 1,
+   "min": 0,
+   "max": 1,
+   "step": 0.01
+  }
+ ],
+ "sksl": "uniform shader image;\nuniform float2 size;\nuniform float time;\nuniform float radius;\nlayout(color) uniform half4 color;\nuniform float opacity;\nfloat a(float2 p) { return float(image.eval(p).a); }\nhalf4 main(float2 coord) {\n    half4 col = image.eval(coord);\n    float r = max(radius, 0.0);\n    float r2 = r * 0.5;\n    float2 d = float2(0.7071, 0.7071);\n    float near = a(coord + float2(r, 0.0));\n    near = max(near, a(coord - float2(r, 0.0)));\n    near = max(near, a(coord + float2(0.0, r)));\n    near = max(near, a(coord - float2(0.0, r)));\n    near = max(near, a(coord + d * r));\n    near = max(near, a(coord - d * r));\n    near = max(near, a(coord + float2(d.x, -d.y) * r));\n    near = max(near, a(coord - float2(d.x, -d.y) * r));\n    near = max(near, a(coord + float2(r2, 0.0)));\n    near = max(near, a(coord - float2(r2, 0.0)));\n    near = max(near, a(coord + float2(0.0, r2)));\n    near = max(near, a(coord - float2(0.0, r2)));\n    near = max(near, a(coord + d * r2));\n    near = max(near, a(coord - d * r2));\n    near = max(near, a(coord + float2(d.x, -d.y) * r2));\n    near = max(near, a(coord - float2(d.x, -d.y) * r2));\n    float line = step(0.5, near) * (1.0 - step(0.5, float(col.a)));\n    float oa = float(color.a) * opacity * line;\n    half4 oc = half4(half3(float3(color.rgb) * oa), half(oa));\n    return col + oc * (1.0 - col.a);\n}\n"
+}

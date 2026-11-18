@@ -216,5 +216,11 @@
  "timecode",
  "textpath",
  "drawingprogress",
- "stroketaper"
+ "stroketaper",
+ "cartoon",
+ "outline",
+ "differencematte",
+ "triprism",
+ "rgbgamma",
+ "channelmixer"
 ]
